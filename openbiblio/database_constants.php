@@ -7,10 +7,10 @@
  *  \/  the MySQL database and user that you have created for OpenBiblio.   \/
  *********************************************************************************
  */
-define("OBIB_HOST",     "localhost");
-define("OBIB_DATABASE", "OpenBiblio");
-define("OBIB_USERNAME", "your OpenBiblio username goes here");
-define("OBIB_PWD",      "your OpenBiblio password goes here");
+define("OBIB_HOST",     getenv ('OPENSHIFT_MYSQL_DB_HOST'));
+define("OBIB_DATABASE", getenv ('OPENSHIFT_PHP'));
+define("OBIB_USERNAME", getenv ('OPENSHIFT_MYSQL_DB_admin8FYzmam'));
+define("OBIB_PWD",      getenv ('OPENSHIFT_MYSQL_DB_N2CbF9bHff69'));
 /*********************************************************************************
  *  /\                                                                      /\
  *  ||                                                                      ||
